@@ -1,0 +1,33 @@
+.loader {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+  align-items: center;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.img {
+  width: 160px;
+  animation: loader 1.6s linear infinite;
+}
+
+@keyframes loader {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
